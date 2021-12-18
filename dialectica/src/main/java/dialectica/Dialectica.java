@@ -1,5 +1,6 @@
 package dialectica;
 
+import javax.swing.BoxLayout;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -32,6 +33,7 @@ public class Dialectica {
 		frame.setSize(sizeOfFrame[0], sizeOfFrame[1]);
 
 		JPanel panel = new JPanel();
+		panel.setLayout(new BoxLayout(panel, BoxLayout.PAGE_AXIS));
 
 		// title
 		JLabel title;
@@ -40,7 +42,7 @@ public class Dialectica {
 		panel.add(title);
 		
 		// textfield
-        JTextField textfieldDoi = new JTextField("Paul Programmierer", 15);
+        JTextField textfieldDoi = new JTextField("Paul Programmierer", 2);
         panel.add(textfieldDoi);
 
 		frame.add(panel);
